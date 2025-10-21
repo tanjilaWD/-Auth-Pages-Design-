@@ -16,6 +16,7 @@ const SignUp = () => {
 
                 <form className="space-y-5">
                    <div className="relative">
+                    
                     <CiUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg"/>
                     <input type="text"
                     placeholder="Enter your name"
@@ -24,6 +25,7 @@ const SignUp = () => {
                     </div> 
 
                     <div className="relative">
+                        
                         <CiMail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg"/>
                         <input type="email"
                          placeholder="Enter your email"
@@ -32,10 +34,10 @@ const SignUp = () => {
                     </div>
 
                        <div className="relative">
-                      
+                        
                         <input type={showPassword ? "text" : 'password'}
-                         placeholder="*********"
-                         className="w-full bg-transparent border border-gray-700 rounded-full py-3 pl-12 pr-4 text-sm text-gray-300 placeholder:text-gray-500 focus:outline-none focus:border-[#10b981] "
+                         placeholder="password"
+                         className="w-full bg-transparent border border-gray-700 rounded-full py-3 pl-4 pr-4 text-sm text-gray-300 placeholder:text-gray-500 focus:outline-none focus:border-[#10b981] "
                         />
                         <button
                         type="button"
@@ -48,8 +50,8 @@ const SignUp = () => {
                  <div className="relative">
                    
                         <input type={showPassword ? "text" : 'password'}
-                         placeholder="*********"
-                         className="w-full bg-transparent border border-gray-700 rounded-full py-3 pl-12 pr-4 text-sm text-gray-300 placeholder:text-gray-500 focus:outline-none focus:border-[#10b981] "
+                         placeholder="confirm password"
+                         className="w-full bg-transparent border border-gray-700 rounded-full py-3 pl-4 pr-4 text-sm text-gray-300 placeholder:text-gray-500 focus:outline-none focus:border-[#10b981] "
                         />
                         <button
                         type="button"

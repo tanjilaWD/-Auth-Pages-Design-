@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./Components/LoginPage";
+import ResetPage from "./Components/ResetPage";
 
 const App = () => {
     return (
@@ -7,6 +8,7 @@ const App = () => {
       
       <Routes>
        <Route path="/loginpage" element={<LoginPage />} /> 
+       <Route path="/resetpage" element={<ResetPage/>} /> 
           
       </Routes>
     </Router>

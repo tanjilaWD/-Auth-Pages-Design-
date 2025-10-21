@@ -19,7 +19,7 @@ const LoginPage = () => {
             </button>
 
             <div className="flex items-center w-full my-4">
-            <div className="flex-grow h-px bg-gray-700"></div>
+            <div className=" flex-grow h-px bg-gray-700"></div>
             <span className="text-gray-500 text-xs px-2">OR</span>
             <div className="flex-grow h-px bg-gray-700"></div>
            </div>

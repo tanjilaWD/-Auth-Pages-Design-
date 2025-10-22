@@ -3,6 +3,7 @@ import { CiUser } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaRegEyeSlash } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -60,7 +61,25 @@ const SignUp = () => {
                 {showPassword ?  <IoEyeOutline/> :<FaRegEyeSlash />}    
                 </button>
                 </div>
+                
+                <div className="flex items-center gap-2">
+                    <input type="checkbox" className="w-4 h-4 accent-[#10b981]"/>
+                    <label className="text-sm text-gray-400">Remember me</label>
+                </div>
 
+                <button className="w-full bg-[#10b981] hover:bg-[#0ea371] text-white rounded-full py-3 text-sm font-medium transition">
+                    Create Account
+                </button>
+
+                <button
+                type="button" className="w-full border border-gray-700 rounded-full py-3 text-sm text-gray-300 flex items-center justify-center gap-2 hover:bg-gray-800 transition"
+                >
+                 <FcGoogle className="w-5 h-5"/>Google
+                </button>
+
+                <p className="text-center text-sm text-gray-400 mt-4">
+                    Already have an account? {" "} <a href="/loginpage" className="text-[#10b981] hover:underline">Log in</a>
+                </p>
                 </form>
             </div>
         </div>
